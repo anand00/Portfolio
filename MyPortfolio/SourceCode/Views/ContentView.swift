@@ -7,16 +7,38 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PortfolioView: View {
+    
+    // MARK:  Variables
+    var appModel: AppModel = AppModel()
+    
+    
+    // MARK:  Views
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+            Color(UIColor.systemBackground).ignoresSafeArea()
+            
+            ScrollView(.vertical, showsIndicators: false){
+                VStack(alignment:.leading){
+                    HeaderView(appModel: appModel)
+                    
+                    SkillHeaderView(skills: appModel.portfolio.skills,width: UIScreen.main.bounds.width )
+                        .padding(.top, 32)
+                    
+                    ExperienceViews(experiences: appModel.portfolio.experiences)
+                        .padding(.top, 42)
+                }.padding(24)
+            }
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct PortfolioView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PortfolioView()
+            .colorScheme(.dark)
     }
 }
+
 
