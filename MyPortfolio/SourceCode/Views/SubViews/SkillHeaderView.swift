@@ -37,7 +37,7 @@ struct SkillHeaderView: View {
             if(showSkills){
             LazyVGrid(columns: [GridItem(),GridItem(),GridItem()],alignment: .leading, spacing: 12) {
                 ForEach(skills){ skill in
-                    SkillView(skill: skill,width:width / 3 - 15 )
+                    SkillView(skill: skill,width:width / 3 - 24 )
                     
                 }
             }.padding(.top,35)

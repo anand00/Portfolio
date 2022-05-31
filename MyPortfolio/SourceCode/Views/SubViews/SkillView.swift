@@ -15,10 +15,10 @@ struct SkillView: View {
     var body: some View {
         VStack{
             Image(systemName: skill.image)
-                .font(.system(size: 35,weight: .medium))
+                .font(.system(size: 30,weight: .regular))
                 .opacity(0.8)
             Text(skill.skillName)
-                .font(.system(size: 18,weight: .semibold))
+                .font(.system(size: 18,weight: .regular))
                 .padding(.top,10)
         }
         .padding()

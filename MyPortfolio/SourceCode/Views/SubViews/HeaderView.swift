@@ -19,10 +19,17 @@ struct HeaderView: View {
                 Spacer()
                 Image("anand")
                     .resizable()
-                    .frame(width:100,height: 100 )
+                    .frame(width:200,height: 200 )
                     .clipShape(Circle())
-                               .shadow(radius: 10)
-                           .overlay(Circle().stroke(Color.gray, lineWidth: 5))
+                    .padding(.all,8)
+                    .background(Circle()
+                    .fill(Color.white)
+                    .shadow(color: Color.black.opacity(0.3), radius: 10, x: 8, y: 8)
+                    .shadow(color: Color.white, radius: 10, x: -10, y: -10)
+                                )
+                    
+                 
+                
                 Spacer()
             }
             Text(appModel.portfolio.name)
