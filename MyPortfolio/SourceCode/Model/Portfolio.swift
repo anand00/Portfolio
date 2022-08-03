@@ -28,3 +28,5 @@ struct Portfolio{
     var skills :[Skill]
     var experiences :[Experience]
 }
+
+

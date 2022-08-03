@@ -11,7 +11,7 @@ struct PortfolioView: View {
     
     // MARK:  Variables
     var appModel: AppModel = AppModel()
-    
+    var isScrolledUp:Bool = false
     
     // MARK:  Views
     
@@ -21,6 +21,8 @@ struct PortfolioView: View {
             
             ScrollView(.vertical, showsIndicators: false){
                 VStack(alignment:.leading){
+                   
+                       
                     HeaderView(appModel: appModel)
                     
                     SkillHeaderView(skills: appModel.portfolio.skills,width: UIScreen.main.bounds.width )
@@ -32,6 +34,8 @@ struct PortfolioView: View {
             }
         }
     }
+    
+    
 }
 
 struct PortfolioView_Previews: PreviewProvider {
