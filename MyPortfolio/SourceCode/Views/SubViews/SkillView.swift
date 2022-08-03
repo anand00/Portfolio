@@ -14,9 +14,10 @@ struct SkillView: View {
     var width :CGFloat = 120
     var body: some View {
         VStack{
-            Image(systemName: skill.image)
-                .font(.system(size: 30,weight: .regular))
-                .opacity(0.8)
+            Image(skill.image)
+                .aspectRatio(contentMode: .fill)
+                     .frame(width: 30, height: 30, alignment: .center)
+                
             Text(skill.skillName)
                 .font(.system(size: 18,weight: .regular))
                 .padding(.top,10)

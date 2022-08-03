@@ -15,15 +15,20 @@ struct ExperienceView: View {
 
     // MARK: views
     var body: some View {
+        
+        let fgolor = Color.random
         VStack(alignment: .leading){
         Circle()
             .frame(width:10, height: 10)
             .opacity(0.65)
+            .foregroundColor(fgolor)
+            
             
             HStack {
                 RoundedRectangle(cornerRadius: 8)
                     .frame(width:3)
                     .padding(.leading, 3)
+                    .foregroundColor(fgolor)
                 
            
         VStack(alignment: .leading){

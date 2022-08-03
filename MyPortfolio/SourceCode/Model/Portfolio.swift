@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Skill:Identifiable{
     var id: String
     var skillName: String
     var image: String
+    
 }
 
 struct Experience:Identifiable{

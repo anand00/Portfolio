@@ -11,7 +11,7 @@ struct HeaderView: View {
     
     // MARK: Variables
     var appModel:AppModel
-    @State private var isProfileExpanded = false
+    @State private var isProfileExpanded = true
     @Namespace private var profileAnimation
     @Namespace private var pImage
     @Namespace private var pName
@@ -61,7 +61,9 @@ struct HeaderView: View {
                 Spacer()
             }
             Text(appModel.portfolio.name)
-                .padding(.top,8).matchedGeometryEffect(id: pName, in: profileAnimation)
+                .font(.title).bold()
+                .padding(.top,8)
+                .matchedGeometryEffect(id: pName, in: profileAnimation)
             
             Text(appModel.portfolio.role)
                 .opacity(0.85)
