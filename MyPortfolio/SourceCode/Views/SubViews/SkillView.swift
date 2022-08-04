@@ -19,11 +19,14 @@ struct SkillView: View {
                      .frame(width: 30, height: 30, alignment: .center)
                 
             Text(skill.skillName)
-                .font(.system(size: 18,weight: .regular))
-                .padding(.top,10)
+                .font(.system(size: 16,weight: .medium))
+                .fixedSize(horizontal: true, vertical: false)
+                .padding(10)
+                
+            RatingView(rating: skill.rating)
         }
         .padding()
-        .frame(width:width,height: 109.7)
+        .frame(width:width,height: width)
         .background(RoundedRectangle(cornerRadius: 12)
         .opacity(0.075)
             )
@@ -35,3 +38,5 @@ struct SkillView_Previews: PreviewProvider {
         SkillView(skill: AppModel().portfolio.skills[0])
     }
 }
+
+

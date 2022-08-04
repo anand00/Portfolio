@@ -24,6 +24,7 @@ struct PortfolioView: View {
                    
                        
                     HeaderView(appModel: appModel)
+                    ShortHeaderView(shortDescData: appModel.portfolio.shortDescription)
                     
                     SkillHeaderView(skills: appModel.portfolio.skills,width: UIScreen.main.bounds.width )
                         .padding(.top, 32)

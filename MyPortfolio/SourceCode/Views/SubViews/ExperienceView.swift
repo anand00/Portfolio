@@ -16,7 +16,7 @@ struct ExperienceView: View {
     // MARK: views
     var body: some View {
         
-        let fgolor = Color.random
+        let fgolor = experience.color
         VStack(alignment: .leading){
         Circle()
             .frame(width:10, height: 10)

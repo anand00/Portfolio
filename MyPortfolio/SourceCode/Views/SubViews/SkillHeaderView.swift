@@ -20,6 +20,7 @@ struct SkillHeaderView: View {
     var body: some View {
         VStack(alignment:.leading) {
             HStack(spacing:16){
+                Image(systemName: "wand.and.stars.inverse").font(.title3)
                 Text("Skills")
                     .font(.system(size: 21, weight: .medium))
                     .opacity(0.9)

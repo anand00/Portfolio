@@ -16,7 +16,8 @@ struct ExperienceViews: View {
     // MARK: views
     var body: some View {
         VStack(alignment:.leading, spacing: 24){
-            HStack(spacing: 16) {
+            HStack(spacing: 10) {
+                Image(systemName: "shareplay").font(.title3)
                 Text("Experience")
                     .font(.system(size: 21))
                     .opacity(0.9)

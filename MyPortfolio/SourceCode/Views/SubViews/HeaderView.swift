@@ -64,25 +64,38 @@ struct HeaderView: View {
                 .font(.title).bold()
                 .padding(.top,8)
                 .matchedGeometryEffect(id: pName, in: profileAnimation)
-            
+            HStack {
+                Image("badgeLeft")
+                    .aspectRatio(contentMode: .fill)
+                         .frame(width: 30, height: 30, alignment: .center)
+                VStack{
             Text(appModel.portfolio.role)
+                .font(.system(size: 20,weight: .semibold))
                 .opacity(0.85)
-                .padding(.top,-2).matchedGeometryEffect(id: pJob, in: profileAnimation)
+                .matchedGeometryEffect(id: pJob, in: profileAnimation)
+            Text(appModel.portfolio.team)
+                .font(.system(size: 12,weight: .regular))
+                .opacity(0.85)
+                }
+                Image("badgeRight")
+                    .aspectRatio(contentMode: .fill)
+                         .frame(width: 30, height: 30, alignment: .center)
+            }
             
             HStack{
-                Image(systemName: "location.fill")
+                Image(systemName: "mappin.and.ellipse")
                     .font(.system(size: 18,weight: .semibold))
                 
                 Text(appModel.portfolio.location)
                     .font(.system(size: 17))
             }
-            .padding(.top,10)
+            .padding(10)
             .opacity(0.50)
-            Text(appModel.portfolio.description)
-                .font(.system(size: 16))
-                .opacity(0.7)
-                .padding(.top,24)
-                .lineSpacing(10)
+//            Text(appModel.portfolio.description)
+//                .font(.system(size: 16))
+//                .opacity(0.7)
+//                .padding(.top,24)
+//                .lineSpacing(10)
         }
     }
     
