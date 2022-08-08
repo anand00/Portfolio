@@ -13,6 +13,7 @@ struct Skill:Identifiable{
     var skillName: String
     var image: String
     var rating: Int
+    var relatedSkills:[String]
 }
 
 struct Experience:Identifiable{

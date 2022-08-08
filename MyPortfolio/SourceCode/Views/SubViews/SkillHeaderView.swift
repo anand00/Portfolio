@@ -38,13 +38,20 @@ struct SkillHeaderView: View {
             if(showSkills){
             LazyVGrid(columns: [GridItem(),GridItem(),GridItem()],alignment: .leading, spacing: 12) {
                 ForEach(skills){ skill in
-                    SkillView(skill: skill,width:width / 3 - 24 )
+                    SkillView(skill: skill,width:width / 3 - 24 ).contextMenu{
+                        VStack{
+                            ForEach(0...skill.relatedSkills.count-1,id: \.self){ index in
+                                Text(skill.relatedSkills[index]).foregroundColor(.black)
+                            }
+                        }
+                    }
                     
                 }
             }.padding(.top,35)
         }
         }
     }
+    
 }
 
 struct SkillHeaderView_Previews: PreviewProvider {

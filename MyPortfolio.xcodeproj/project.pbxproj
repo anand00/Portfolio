@@ -20,6 +20,7 @@
 		197067DF283B67BB0072971C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197067DE283B67BB0072971C /* HeaderView.swift */; };
 		19853368289AEB1D00061B76 /* ShortHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19853367289AEB1D00061B76 /* ShortHeaderView.swift */; };
 		1985336A289B01E300061B76 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19853369289B01E300061B76 /* RatingView.swift */; };
+		19B03A5F28A19E42008D046C /* ContextMenuContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B03A5E28A19E42008D046C /* ContextMenuContent.swift */; };
 		19DC8868283B9D4D00395A36 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC8867283B9D4D00395A36 /* SkillView.swift */; };
 		19DC886A283BA6CE00395A36 /* SkillHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC8869283BA6CE00395A36 /* SkillHeaderView.swift */; };
 		19DC886C283BB4A600395A36 /* ExperienceViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DC886B283BB4A600395A36 /* ExperienceViews.swift */; };
@@ -60,6 +61,7 @@
 		197067DE283B67BB0072971C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		19853367289AEB1D00061B76 /* ShortHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortHeaderView.swift; sourceTree = "<group>"; };
 		19853369289B01E300061B76 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		19B03A5E28A19E42008D046C /* ContextMenuContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuContent.swift; sourceTree = "<group>"; };
 		19DC8867283B9D4D00395A36 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		19DC8869283BA6CE00395A36 /* SkillHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillHeaderView.swift; sourceTree = "<group>"; };
 		19DC886B283BB4A600395A36 /* ExperienceViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViews.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		197067DD283B67900072971C /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				19B03A5B28A19DE7008D046C /* ContextMenu */,
 				197067DE283B67BB0072971C /* HeaderView.swift */,
 				19DC8867283B9D4D00395A36 /* SkillView.swift */,
 				19DC8869283BA6CE00395A36 /* SkillHeaderView.swift */,
@@ -219,6 +222,14 @@
 				19853369289B01E300061B76 /* RatingView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		19B03A5B28A19DE7008D046C /* ContextMenu */ = {
+			isa = PBXGroup;
+			children = (
+				19B03A5E28A19E42008D046C /* ContextMenuContent.swift */,
+			);
+			path = ContextMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +368,7 @@
 				1985336A289B01E300061B76 /* RatingView.swift in Sources */,
 				19DC886C283BB4A600395A36 /* ExperienceViews.swift in Sources */,
 				19DC886A283BA6CE00395A36 /* SkillHeaderView.swift in Sources */,
+				19B03A5F28A19E42008D046C /* ContextMenuContent.swift in Sources */,
 				197067D1283B4DBC0072971C /* ColorExtension.swift in Sources */,
 				19DC886E283BBDD800395A36 /* ExperienceView.swift in Sources */,
 				19DC8868283B9D4D00395A36 /* SkillView.swift in Sources */,
@@ -536,7 +548,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emanate.arkitApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -565,7 +577,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emanate.arkitApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anand.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
